@@ -1,6 +1,6 @@
 //
-//  NetworkTweaksTests.m
-//  NetworkTweaksTests
+//  TweaksRemoteTests.m
+//  TweaksRemoteTests
 //
 //  Created by Noah Hilt on 7/6/14.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface NetworkTweaksTests : XCTestCase
+@interface TweaksRemoteTests : XCTestCase
 
 @end
 
-@implementation NetworkTweaksTests
+@implementation TweaksRemoteTests
 
 - (void)setUp
 {

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  NetworkTweaks
+//  TweaksRemote
 //
 //  Created by Noah Hilt on 7/6/14.
 //  Copyright (c) 2014 Noah Hilt. All rights reserved.

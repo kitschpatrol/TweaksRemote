@@ -17,7 +17,7 @@
 		651192D71969D79D0073EE06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651192D61969D79D0073EE06 /* XCTest.framework */; };
 		651192D81969D79D0073EE06 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651192B71969D79D0073EE06 /* Cocoa.framework */; };
 		651192E01969D79D0073EE06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651192DE1969D79D0073EE06 /* InfoPlist.strings */; };
-		651192E21969D79D0073EE06 /* NetworkTweaksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651192E11969D79D0073EE06 /* NetworkTweaksTests.m */; };
+		651192E21969D79D0073EE06 /* TweaksRemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651192E11969D79D0073EE06 /* TweaksRemoteTests.m */; };
 		651192ED1969DA630073EE06 /* FBTweakClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 651192EC1969DA630073EE06 /* FBTweakClient.m */; };
 		6511934C196AD1AF0073EE06 /* FBTweakDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6511934B196AD1AF0073EE06 /* FBTweakDataTableViewCell.xib */; };
 		6511934F196AD2E50073EE06 /* FBTweakDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6511934E196AD2E50073EE06 /* FBTweakDataTableViewCell.m */; };
@@ -34,7 +34,7 @@
 			containerPortal = 651192AC1969D79D0073EE06 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 651192B31969D79D0073EE06;
-			remoteInfo = NetworkTweaks;
+			remoteInfo = TweaksRemote;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,20 +43,20 @@
 		651192B71969D79D0073EE06 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		651192BA1969D79D0073EE06 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		651192BB1969D79D0073EE06 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		651192BF1969D79D0073EE06 /* NetworkTweaks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkTweaks-Info.plist"; sourceTree = "<group>"; };
+		651192BF1969D79D0073EE06 /* TweaksRemote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweaksRemote-Info.plist"; sourceTree = "<group>"; };
 		651192C11969D79D0073EE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		651192C31969D79D0073EE06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		651192C51969D79D0073EE06 /* NetworkTweaks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkTweaks-Prefix.pch"; sourceTree = "<group>"; };
+		651192C51969D79D0073EE06 /* TweaksRemote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweaksRemote-Prefix.pch"; sourceTree = "<group>"; };
 		651192C71969D79D0073EE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		651192C91969D79D0073EE06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		651192CA1969D79D0073EE06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		651192CD1969D79D0073EE06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		651192CF1969D79D0073EE06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		651192D51969D79D0073EE06 /* NetworkTweaksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkTweaksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		651192D51969D79D0073EE06 /* TweaksRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweaksRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651192D61969D79D0073EE06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		651192DD1969D79D0073EE06 /* NetworkTweaksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkTweaksTests-Info.plist"; sourceTree = "<group>"; };
+		651192DD1969D79D0073EE06 /* TweaksRemoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweaksRemoteTests-Info.plist"; sourceTree = "<group>"; };
 		651192DF1969D79D0073EE06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		651192E11969D79D0073EE06 /* NetworkTweaksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkTweaksTests.m; sourceTree = "<group>"; };
+		651192E11969D79D0073EE06 /* TweaksRemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweaksRemoteTests.m; sourceTree = "<group>"; };
 		651192EB1969DA630073EE06 /* FBTweakClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakClient.h; sourceTree = "<group>"; };
 		651192EC1969DA630073EE06 /* FBTweakClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBTweakClient.m; sourceTree = "<group>"; };
 		651192F61969DD7E0073EE06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,8 +98,8 @@
 		651192AB1969D79D0073EE06 = {
 			isa = PBXGroup;
 			children = (
-				651192BD1969D79D0073EE06 /* NetworkTweaks */,
-				651192DB1969D79D0073EE06 /* NetworkTweaksTests */,
+				651192BD1969D79D0073EE06 /* TweaksRemote */,
+				651192DB1969D79D0073EE06 /* TweaksRemoteTests */,
 				651192B61969D79D0073EE06 /* Frameworks */,
 				651192B51969D79D0073EE06 /* Products */,
 			);
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				651192B41969D79D0073EE06 /* Tweaks.app */,
-				651192D51969D79D0073EE06 /* NetworkTweaksTests.xctest */,
+				651192D51969D79D0073EE06 /* TweaksRemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		651192BD1969D79D0073EE06 /* NetworkTweaks */ = {
+		651192BD1969D79D0073EE06 /* TweaksRemote */ = {
 			isa = PBXGroup;
 			children = (
 				651192C91969D79D0073EE06 /* AppDelegate.h */,
@@ -157,34 +157,36 @@
 				651192CF1969D79D0073EE06 /* Images.xcassets */,
 				651192BE1969D79D0073EE06 /* Supporting Files */,
 			);
-			path = NetworkTweaks;
+			name = TweaksRemote;
+			path = TweaksRemote;
 			sourceTree = "<group>";
 		};
 		651192BE1969D79D0073EE06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				651192BF1969D79D0073EE06 /* NetworkTweaks-Info.plist */,
+				651192BF1969D79D0073EE06 /* TweaksRemote-Info.plist */,
 				651192C01969D79D0073EE06 /* InfoPlist.strings */,
 				651192C31969D79D0073EE06 /* main.m */,
-				651192C51969D79D0073EE06 /* NetworkTweaks-Prefix.pch */,
+				651192C51969D79D0073EE06 /* TweaksRemote-Prefix.pch */,
 				651192C61969D79D0073EE06 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		651192DB1969D79D0073EE06 /* NetworkTweaksTests */ = {
+		651192DB1969D79D0073EE06 /* TweaksRemoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				651192E11969D79D0073EE06 /* NetworkTweaksTests.m */,
+				651192E11969D79D0073EE06 /* TweaksRemoteTests.m */,
 				651192DC1969D79D0073EE06 /* Supporting Files */,
 			);
-			path = NetworkTweaksTests;
+			name = TweaksRemoteTests;
+			path = TweaksRemoteTests;
 			sourceTree = "<group>";
 		};
 		651192DC1969D79D0073EE06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				651192DD1969D79D0073EE06 /* NetworkTweaksTests-Info.plist */,
+				651192DD1969D79D0073EE06 /* TweaksRemoteTests-Info.plist */,
 				651192DE1969D79D0073EE06 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -193,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		651192B31969D79D0073EE06 /* NetworkTweaks */ = {
+		651192B31969D79D0073EE06 /* TweaksRemote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 651192E51969D79D0073EE06 /* Build configuration list for PBXNativeTarget "NetworkTweaks" */;
+			buildConfigurationList = 651192E51969D79D0073EE06 /* Build configuration list for PBXNativeTarget "TweaksRemote" */;
 			buildPhases = (
 				651192B01969D79D0073EE06 /* Sources */,
 				651192B11969D79D0073EE06 /* Frameworks */,
@@ -205,14 +207,14 @@
 			);
 			dependencies = (
 			);
-			name = NetworkTweaks;
-			productName = NetworkTweaks;
+			name = TweaksRemote;
+			productName = TweaksRemote;
 			productReference = 651192B41969D79D0073EE06 /* Tweaks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		651192D41969D79D0073EE06 /* NetworkTweaksTests */ = {
+		651192D41969D79D0073EE06 /* TweaksRemoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 651192E81969D79D0073EE06 /* Build configuration list for PBXNativeTarget "NetworkTweaksTests" */;
+			buildConfigurationList = 651192E81969D79D0073EE06 /* Build configuration list for PBXNativeTarget "TweaksRemoteTests" */;
 			buildPhases = (
 				651192D11969D79D0073EE06 /* Sources */,
 				651192D21969D79D0073EE06 /* Frameworks */,
@@ -223,9 +225,9 @@
 			dependencies = (
 				651192DA1969D79D0073EE06 /* PBXTargetDependency */,
 			);
-			name = NetworkTweaksTests;
-			productName = NetworkTweaksTests;
-			productReference = 651192D51969D79D0073EE06 /* NetworkTweaksTests.xctest */;
+			name = TweaksRemoteTests;
+			productName = TweaksRemoteTests;
+			productReference = 651192D51969D79D0073EE06 /* TweaksRemoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 651192AF1969D79D0073EE06 /* Build configuration list for PBXProject "NetworkTweaks" */;
+			buildConfigurationList = 651192AF1969D79D0073EE06 /* Build configuration list for PBXProject "TweaksRemote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -255,8 +257,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				651192B31969D79D0073EE06 /* NetworkTweaks */,
-				651192D41969D79D0073EE06 /* NetworkTweaksTests */,
+				651192B31969D79D0073EE06 /* TweaksRemote */,
+				651192D41969D79D0073EE06 /* TweaksRemoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651192E21969D79D0073EE06 /* NetworkTweaksTests.m in Sources */,
+				651192E21969D79D0073EE06 /* TweaksRemoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +316,7 @@
 /* Begin PBXTargetDependency section */
 		651192DA1969D79D0073EE06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 651192B31969D79D0073EE06 /* NetworkTweaks */;
+			target = 651192B31969D79D0073EE06 /* TweaksRemote */;
 			targetProxy = 651192D91969D79D0073EE06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -431,8 +433,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkTweaks/NetworkTweaks-Prefix.pch";
-				INFOPLIST_FILE = "NetworkTweaks/NetworkTweaks-Info.plist";
+				GCC_PREFIX_HEADER = "TweaksRemote/TweaksRemote-Prefix.pch";
+				INFOPLIST_FILE = "TweaksRemote/TweaksRemote-Info.plist";
 				PRODUCT_NAME = Tweaks;
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,8 +446,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkTweaks/NetworkTweaks-Prefix.pch";
-				INFOPLIST_FILE = "NetworkTweaks/NetworkTweaks-Info.plist";
+				GCC_PREFIX_HEADER = "TweaksRemote/TweaksRemote-Prefix.pch";
+				INFOPLIST_FILE = "TweaksRemote/TweaksRemote-Info.plist";
 				PRODUCT_NAME = Tweaks;
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,20 +456,20 @@
 		651192E91969D79D0073EE06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetworkTweaks.app/Contents/MacOS/NetworkTweaks";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TweaksRemote.app/Contents/MacOS/TweaksRemote";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkTweaks/NetworkTweaks-Prefix.pch";
+				GCC_PREFIX_HEADER = "TweaksRemote/TweaksRemote-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "NetworkTweaksTests/NetworkTweaksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TweaksRemoteTests/TweaksRemoteTests-Info.plist";
+				PRODUCT_NAME = TweaksRemoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -476,16 +478,16 @@
 		651192EA1969D79D0073EE06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetworkTweaks.app/Contents/MacOS/NetworkTweaks";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TweaksRemote.app/Contents/MacOS/TweaksRemote";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkTweaks/NetworkTweaks-Prefix.pch";
-				INFOPLIST_FILE = "NetworkTweaksTests/NetworkTweaksTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TweaksRemote/TweaksRemote-Prefix.pch";
+				INFOPLIST_FILE = "TweaksRemoteTests/TweaksRemoteTests-Info.plist";
+				PRODUCT_NAME = TweaksRemoteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -494,7 +496,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		651192AF1969D79D0073EE06 /* Build configuration list for PBXProject "NetworkTweaks" */ = {
+		651192AF1969D79D0073EE06 /* Build configuration list for PBXProject "TweaksRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				651192E31969D79D0073EE06 /* Debug */,
@@ -503,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		651192E51969D79D0073EE06 /* Build configuration list for PBXNativeTarget "NetworkTweaks" */ = {
+		651192E51969D79D0073EE06 /* Build configuration list for PBXNativeTarget "TweaksRemote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				651192E61969D79D0073EE06 /* Debug */,
@@ -512,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		651192E81969D79D0073EE06 /* Build configuration list for PBXNativeTarget "NetworkTweaksTests" */ = {
+		651192E81969D79D0073EE06 /* Build configuration list for PBXNativeTarget "TweaksRemoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				651192E91969D79D0073EE06 /* Debug */,

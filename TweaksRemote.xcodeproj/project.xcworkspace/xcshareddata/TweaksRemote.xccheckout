@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4081A37E-3228-455C-8D4D-4AB0B85B4CE3</string>
+	<string>B800C11A-CA13-48A7-8CF8-52F1D10BDCFF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>NetworkTweaks</string>
+	<string>TweaksRemote</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>28C24807-30D1-45BA-AA84-6E790BCB6D59</key>
+		<key>AB182C26-8788-489F-97A3-9F82368A60A6</key>
 		<string>ssh://github.com/kitschpatrol/TweaksRemote.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>NetworkTweaks.xcodeproj/project.xcworkspace</string>
+	<string>TweaksRemote.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>28C24807-30D1-45BA-AA84-6E790BCB6D59</key>
+		<key>AB182C26-8788-489F-97A3-9F82368A60A6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>28C24807-30D1-45BA-AA84-6E790BCB6D59</string>
+	<string>AB182C26-8788-489F-97A3-9F82368A60A6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>28C24807-30D1-45BA-AA84-6E790BCB6D59</string>
+			<string>AB182C26-8788-489F-97A3-9F82368A60A6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TweaksRemote</string>
 		</dict>
