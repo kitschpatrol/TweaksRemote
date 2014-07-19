@@ -16,7 +16,7 @@ typedef enum {
     FBTweakDataTypeInteger,
     FBTweakDataTypeReal,
     FBTweakDataTypeString,
-    FBTweakDataTypeAction
+    FBTweakDataTypeAction,
 } FBTweakDataType;
 
 @interface FBTweakCategory : NSObject

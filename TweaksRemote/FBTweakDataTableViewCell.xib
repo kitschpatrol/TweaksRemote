@@ -12,7 +12,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="GUU-lh-yr0">
-                    <rect key="frame" x="4" y="7" width="200" height="14"/>
+                    <rect key="frame" x="4" y="7" width="148" height="14"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                     <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Label" id="1K3-QH-UZF">
                         <font key="font" metaFont="smallSystem"/>
@@ -63,17 +63,26 @@
                     </connections>
                 </button>
                 <slider verticalHuggingPriority="750" id="zKv-Ed-EWW">
-                    <rect key="frame" x="158" y="4" width="508" height="17"/>
+                    <rect key="frame" x="118" y="4" width="548" height="17"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <sliderCell key="cell" controlSize="small" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="dYP-1M-TmE"/>
                     <connections>
                         <action selector="_sliderChanged:" target="c22-O7-iKe" id="6ZL-wZ-wSS"/>
                     </connections>
                 </slider>
+                <colorWell id="wWJ-qk-5YP">
+                    <rect key="frame" x="118" y="3" width="548" height="19"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="_colorChanged:" target="c22-O7-iKe" id="fxS-rI-3VG"/>
+                    </connections>
+                </colorWell>
             </subviews>
             <connections>
                 <outlet property="actionButton" destination="O70-LQ-7kM" id="RXD-LV-ENA"/>
                 <outlet property="checkButton" destination="HX5-Jm-Lnp" id="saM-B6-IiP"/>
+                <outlet property="colorWell" destination="wWJ-qk-5YP" id="6mK-5c-XGV"/>
                 <outlet property="nameLabel" destination="GUU-lh-yr0" id="3cV-86-qtv"/>
                 <outlet property="slider" destination="zKv-Ed-EWW" id="a3n-wv-I6J"/>
                 <outlet property="stepper" destination="DOr-UK-kSf" id="rmz-g6-J9b"/>

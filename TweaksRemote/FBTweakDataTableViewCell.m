@@ -7,40 +7,48 @@
 //
 
 #import "FBTweakDataTableViewCell.h"
+#import "FBColorUtils.h"
 
 @interface FBTweakDataTableViewCell ()
 
-@property (weak) IBOutlet NSSlider *slider;
 @property (weak) IBOutlet NSTextField *nameLabel;
+@property (weak) IBOutlet NSSlider *slider;
 @property (weak) IBOutlet NSTextField *textField;
 @property (weak) IBOutlet NSStepper *stepper;
 @property (weak) IBOutlet NSButton *checkButton;
 @property (weak) IBOutlet NSButton *actionButton;
+@property (weak) IBOutlet NSColorWell *colorWell;
 
 @end
 
 @implementation FBTweakDataTableViewCell
 
 - (void)setTweakData:(FBTweakData *)tweakData {
+  
+  [[NSColorPanel sharedColorPanel] setShowsAlpha:YES];
+  
   if (_tweakData != tweakData) {
     _tweakData = tweakData;
 
     self.nameLabel.stringValue = _tweakData.name;
-
+    
+    // Hide all controls by default
+    self.slider.hidden = YES;
+    self.textField.hidden = YES;
+    self.stepper.hidden = YES;
+    self.checkButton.hidden = YES;
+    self.actionButton.hidden = YES;
+    self.colorWell.hidden = YES;
+    
+    // Selectively reveal controls and set view state
     switch (_tweakData.type) {
       case FBTweakDataTypeBoolean:
-        [self.textField setHidden:YES];
-        [self.stepper setHidden:YES];
-        [self.checkButton setHidden:NO];
-        self.slider.hidden = YES;
-        [self.actionButton setHidden:YES];
+        self.checkButton.hidden = NO;
         break;
 
       case FBTweakDataTypeInteger:
-        [self.textField setHidden:NO];
-        [self.stepper setHidden:NO];
-        [self.checkButton setHidden:YES];
-        [self.actionButton setHidden:YES];
+        self.textField.hidden = NO;
+        self.stepper.hidden = NO;
         self.slider.hidden = NO;
 
         if (self.tweakData.stepValue) {
@@ -63,10 +71,8 @@
         break;
 
       case FBTweakDataTypeReal:
-        [self.textField setHidden:NO];
-        [self.stepper setHidden:NO];
-        [self.checkButton setHidden:YES];
-        [self.actionButton setHidden:YES];
+        self.textField.hidden = NO;
+        self.stepper.hidden = NO;
         self.slider.hidden = NO;
 
         if (self.tweakData.minimumValue) {
@@ -89,19 +95,16 @@
         break;
 
       case FBTweakDataTypeString:
-        [self.textField setHidden:NO];
-        [self.stepper setHidden:YES];
-        [self.checkButton setHidden:YES];
-        [self.actionButton setHidden:YES];
-        self.slider.hidden = YES;
+        self.textField.hidden = NO;
+
+        // Handle color strings
+        if (FBIsColorString(self.tweakData.currentValue)) {
+          self.colorWell.hidden = NO;
+        }
         break;
 
       case FBTweakDataTypeAction:
-        [self.textField setHidden:YES];
-        [self.stepper setHidden:YES];
-        [self.checkButton setHidden:YES];
-        [self.actionButton setHidden:NO];
-        self.slider.hidden = YES;
+        self.actionButton.hidden = NO;
         break;
 
       case FBTweakDataTypeNone:
@@ -132,6 +135,11 @@
     [self _updateValue:@(slider.doubleValue) primary:NO write:YES];
   }
 }
+
+- (IBAction)_colorChanged:(NSColorWell *)colorWell {
+  [self _updateValue:FBHexStringFromColor(colorWell.color) primary:NO write:YES];
+}
+
 
 - (IBAction)_actionPressed:(NSButton *)button {
   if ([self.delegate respondsToSelector:@selector(tweakAction:)]) {
@@ -180,9 +188,15 @@
     }
 
     case FBTweakDataTypeString:
-      if (primary) {
-        [self.textField setStringValue:value];
-      }
+      //if (primary) {
+      self.textField.stringValue = value;
+      
+        if (FBIsColorString(value)) {
+          // update the color well, too
+          // this rebroadcasts... but better guard than "primary" flag
+          self.colorWell.color = FBColorFromHexString(value);
+        }
+      //}
       break;
 
     case FBTweakDataTypeAction:
@@ -204,8 +218,26 @@
       [self _updateValue:@([self.textField doubleValue]) primary:NO write:YES];
       break;
 
-    case FBTweakDataTypeString:
+    case FBTweakDataTypeString: {
+      // attempted validation
+      // ick, need more structured tweak types
+      if (FBIsColorString(self.tweakData.currentValue)) {
+        // It's a color, make sure it has a leading hash
+        if (!FBIsColorString(self.textField.stringValue)) {
+          // ignore and use old value
+          self.textField.stringValue = self.tweakData.currentValue;
+        }
+      }
+      else {
+        // It's a string, make sure it doesn't have a leading hash
+        if (FBIsColorString(self.textField.stringValue)) {
+          // ignore and use old value
+          self.textField.stringValue = self.tweakData.currentValue;
+        }
+      }
+      
       [self _updateValue:self.textField.stringValue primary:NO write:YES];
+    }
       break;
 
     case FBTweakDataTypeAction:
@@ -216,4 +248,5 @@
       break;
   }
 }
+
 @end

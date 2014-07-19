@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25EC0FB1197B0261001D7E80 /* FBColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EC0FB0197B0261001D7E80 /* FBColorUtils.m */; };
 		651192B81969D79D0073EE06 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651192B71969D79D0073EE06 /* Cocoa.framework */; };
 		651192C21969D79D0073EE06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651192C01969D79D0073EE06 /* InfoPlist.strings */; };
 		651192C41969D79D0073EE06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 651192C31969D79D0073EE06 /* main.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25EC0FAF197B0261001D7E80 /* FBColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBColorUtils.h; sourceTree = "<group>"; };
+		25EC0FB0197B0261001D7E80 /* FBColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBColorUtils.m; sourceTree = "<group>"; };
 		651192B41969D79D0073EE06 /* Tweaks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweaks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651192B71969D79D0073EE06 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		651192BA1969D79D0073EE06 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 				651192C91969D79D0073EE06 /* AppDelegate.h */,
 				651192CA1969D79D0073EE06 /* AppDelegate.m */,
 				651192CC1969D79D0073EE06 /* MainMenu.xib */,
+				25EC0FAF197B0261001D7E80 /* FBColorUtils.h */,
+				25EC0FB0197B0261001D7E80 /* FBColorUtils.m */,
 				651192EB1969DA630073EE06 /* FBTweakClient.h */,
 				651192EC1969DA630073EE06 /* FBTweakClient.m */,
 				65119350196AD4480073EE06 /* FBTweakData.h */,
@@ -157,7 +162,6 @@
 				651192CF1969D79D0073EE06 /* Images.xcassets */,
 				651192BE1969D79D0073EE06 /* Supporting Files */,
 			);
-			name = TweaksRemote;
 			path = TweaksRemote;
 			sourceTree = "<group>";
 		};
@@ -179,7 +183,6 @@
 				651192E11969D79D0073EE06 /* TweaksRemoteTests.m */,
 				651192DC1969D79D0073EE06 /* Supporting Files */,
 			);
-			name = TweaksRemoteTests;
 			path = TweaksRemoteTests;
 			sourceTree = "<group>";
 		};
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6511934F196AD2E50073EE06 /* FBTweakDataTableViewCell.m in Sources */,
+				25EC0FB1197B0261001D7E80 /* FBColorUtils.m in Sources */,
 				651192CB1969D79D0073EE06 /* AppDelegate.m in Sources */,
 				65C1B16A196B5976001023A7 /* FBTweakCategoryTableViewCell.m in Sources */,
 				65119352196AD4480073EE06 /* FBTweakData.m in Sources */,
